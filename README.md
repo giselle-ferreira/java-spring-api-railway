@@ -19,19 +19,20 @@ Repositório criado para envio de desafio de RestfulAPI, para o Bootcamp Santand
 ```mermaid
 classDiagram
     class Link {
-        +String id
+        +UUID id
         +String url
         +String description
         +Category category
     }
 
     class Category {
-        +String id
+        +UUID id
         +String name
+        +Set~Link~ links
     }
 
     Link --> Category
-
+    Category "1" --> "*" Link : contains
 
 ```
 
