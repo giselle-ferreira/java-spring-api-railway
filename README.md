@@ -4,7 +4,7 @@ Repositório criado para envio de desafio de RestfulAPI, para o Bootcamp Santand
 <br/>
 
 ## Tecnologias e Ferramentas
-- Java
+- Java 17
 - Spring Boot
 - Swagger
 - H2
