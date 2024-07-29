@@ -16,7 +16,7 @@ public class Link {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private Long id;
     private String url;
     private String description;
 

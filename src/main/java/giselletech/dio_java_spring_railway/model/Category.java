@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Set;
-import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -17,9 +16,8 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
-    private Category category;
+    private Long id;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Link> links;
 }
