@@ -80,10 +80,8 @@
 						</manifest>
 					</archive>
 					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
+						<groupId>org.projectlombok</groupId>
+						<artifactId>lombok</artifactId>
 					</excludes>
 				</configuration>
 			</plugin>
