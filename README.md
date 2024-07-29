@@ -30,7 +30,8 @@ classDiagram
 <br/>
 
 ## Swagger
-![image](https://github.com/user-attachments/assets/e680e424-1732-4000-835b-cce2b5164d06)
+![image](https://github.com/user-attachments/assets/305c9d38-5d9b-461c-93b7-8a8f968c96e4)
+
 
 
 <br/>
