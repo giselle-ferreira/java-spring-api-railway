@@ -1,0 +1,1 @@
+web: java -jar target/dio-java-spring-railway-0.0.1-SNAPSHOT.jar
