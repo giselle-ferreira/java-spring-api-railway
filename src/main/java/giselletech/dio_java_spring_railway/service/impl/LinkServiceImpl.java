@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @Service
@@ -17,7 +18,7 @@ public class LinkServiceImpl implements LinkService {
 
     @Override
     public Optional<Link> findById(Long id) {
-        return linkRepository.findById(id);
+        return Optional.ofNullable(linkRepository.findById(id).orElseThrow(NoSuchElementException::new));
     }
 
     @Override
