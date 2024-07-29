@@ -18,28 +18,20 @@ Repositório criado para envio de desafio de RestfulAPI, para o Bootcamp Santand
 
 ```mermaid
 classDiagram
-    class Link {
-        +UUID id
+    class WebPage {
+        +String id
         +String url
         +String description
-        +Category category
     }
 
-    class Category {
-        +UUID id
-        +String name
-        +Set~Link~ links
-    }
-
-    Link --> Category
-    Category "1" --> "*" Link : contains
 
 ```
 
 <br/>
 
 ## Swagger
-![image](https://github.com/user-attachments/assets/de2ab3a8-b675-4f12-a156-7f728f8f89ea)
+![image](https://github.com/user-attachments/assets/e680e424-1732-4000-835b-cce2b5164d06)
+
 
 <br/>
 
