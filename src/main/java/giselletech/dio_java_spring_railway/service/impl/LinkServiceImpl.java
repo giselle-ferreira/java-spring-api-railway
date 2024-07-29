@@ -6,6 +6,7 @@ import giselletech.dio_java_spring_railway.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,6 +18,11 @@ public class LinkServiceImpl implements LinkService {
     @Override
     public Optional<Link> findById(Long id) {
         return linkRepository.findById(id);
+    }
+
+    @Override
+    public List<Link> findAllLinks() {
+        return linkRepository.findAll();
     }
 
     @Override
@@ -36,7 +42,6 @@ public class LinkServiceImpl implements LinkService {
 
         existingLink.setUrl(linkToUpdate.getUrl());
         existingLink.setDescription(linkToUpdate.getDescription());
-        existingLink.setCategory(linkToUpdate.getCategory());
 
         return linkRepository.save(existingLink);
 
